@@ -1,0 +1,37 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "shared-forms": {
+      "projectType": "library",
+      "root": "projects/shared-forms",
+      "sourceRoot": "projects/shared-forms/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/shared-forms/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/shared-forms/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/shared-forms/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/shared-forms/tsconfig.spec.json",
+            "polyfills": ["zone.js", "zone.js/testing"]
+          }
+        }
+      }
+    }
+  }
+}

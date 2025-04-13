@@ -1,2 +1,2 @@
-# lib-shared-angular
-Esse projeto é uma biblioteca desenvolvida para dar suporte na criação de demais outros mfes do sistema erp.
+# mfe-shared
+Este repositório servirá para compartilhar componnentes para o ecossistema do mfe-core e sesus mfe's.
