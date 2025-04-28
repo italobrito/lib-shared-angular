@@ -1,6 +1,6 @@
 import { inject } from '@angular/core';
-import { GlobalContextService } from '../../../presentation/view/shared/services/global-context.service';
-import { CryptoService } from '../../../presentation/view/shared/services/crypto.service';
+import { GlobalContextService } from '../../../presentation/ui/shared/services/global-context.service';
+import { CryptoService } from '../../../presentation/ui/shared/services/crypto.service';
 import { BehaviorSubject } from 'rxjs';
 
 export abstract class IContextUseCase {

@@ -23,9 +23,13 @@
       "import": "./src/lib/domain/models/user-entity.ts",
       "require": "./src/lib/domain/models/user-entity.js"
     },
-    "./lib/presentation/view/shared/forms-builder-validators/sub-forms/user-default": {
-      "import": "./src/lib/presentation/view/shared/forms-builder-validators/sub-forms/user-default.ts",
-      "require": "./src/lib/presentation/view/shared/forms-builder-validators/sub-forms/user-default.js"
+    "./lib/presentation/ui/shared/forms-builder-validators/sub-forms/user-default": {
+      "import": "./src/lib/presentation/ui/shared/forms-builder-validators/sub-forms/user-default.ts",
+      "require": "./src/lib/presentation/ui/shared/forms-builder-validators/sub-forms/user-default.js"
+    },
+    "./lib/presentation/ui/shared/styles/shared-styles.scss" : {
+      "import": "./src/lib/presentation/ui/shared/styles/shared-styles.scss",
+      "require": "./src/lib/presentation/ui/shared/styles/shared-styles.css"      
     }
   },
   "sideEffects": false

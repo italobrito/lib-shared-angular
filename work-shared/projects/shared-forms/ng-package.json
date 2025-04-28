@@ -4,5 +4,5 @@
   "lib": {
     "entryFile": "src/public-api.ts"
   },
-  "assets": ["src/lib/presentation/view/shared/styles"]
+  "assets": ["./src/lib/presentation/ui/shared/styles"]
 }
