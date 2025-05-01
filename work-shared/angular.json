@@ -12,7 +12,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/shared-forms/ng-package.json"
+            "project": "projects/shared-forms/ng-package.json",
+            "tsConfig": "projects/shared-forms/tsconfig.lib.json"
           },
           "configurations": {
             "production": {

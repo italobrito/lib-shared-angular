@@ -1,0 +1,19 @@
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { BtnsAbstractComponent, getFormControlProvider } from '../btns-abstract';
+import { MaskDirective } from '../../../directives/mask.directive';
+
+@Component({
+  selector: 'app-btn-input',
+  standalone: true,
+  imports: [CommonModule, ReactiveFormsModule, MaskDirective],
+  templateUrl: './btn-input.component.html',
+  providers: [getFormControlProvider(BtnInputComponent)],
+})
+export class BtnInputComponent extends BtnsAbstractComponent {
+  @Input() mask = '';
+  @Input() maxLength: number | undefined; 
+}

@@ -1,0 +1,7 @@
+import { DropdownType } from "../../../../domain/entities/dropdown-type";
+
+export const TIPOS_USUARIOS = [
+    { value: '', label: 'Todos' },
+    { value: 'A', label: 'Administrador' },
+    { value: 'C', label: 'Comum' }
+] as Array<DropdownType>;
