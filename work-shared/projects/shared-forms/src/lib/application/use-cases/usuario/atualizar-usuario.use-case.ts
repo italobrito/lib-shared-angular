@@ -4,11 +4,6 @@ import { AtualizarUsuarioUseCaseInterface } from '../../../domain/interfaces/use
 import { USUARIO_REPOSITORY, UsuarioRepositoryInterface } from '../../../domain/interfaces/repositories/usuario/usuario-repository.interface';
 import { UsuarioFormulario } from '../../../domain/entities/usuario';
 
-// import { UsuarioFormulario } from '@entities/usuario';
-
-// import { USUARIO_REPOSITORY, UsuarioRepositoryInterface } from '@domain/interfaces/repositories/usuario-repository.interface';
-// import { AtualizarUsuarioUseCaseInterface } from '@domain/interfaces/use-cases/atualizar-usuario.use-case.interface';
-
 @Injectable({
     providedIn: 'root'
 })

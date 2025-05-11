@@ -4,11 +4,6 @@ import { AtualizarUsuarioControllerInterface } from '../../../domain/interfaces/
 import { ATUALIZAR_USUARIO_USE_CASE, AtualizarUsuarioUseCaseInterface } from '../../../domain/interfaces/usecases/usuario/atualizar-usuario.use-case.interface';
 import { UsuarioFormulario } from '../../../domain/entities/usuario';
 
-// import { UsuarioFormulario } from '@entities/usuario';
-
-// import { AtualizarUsuarioControllerInterface } from '@domain/interfaces/controllers/atualizar-usuario-controller.interface';
-// import { ATUALIZAR_USUARIO_USE_CASE, AtualizarUsuarioUseCaseInterface } from '@domain/interfaces/use-cases/atualizar-usuario.use-case.interface';
-
 @Injectable({
   providedIn: 'root',
 })

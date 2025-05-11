@@ -1,12 +1,8 @@
 import { Inject, Injectable } from '@angular/core';
+
 import { ListarUsuariosUseCaseInterface } from '../../../domain/interfaces/usecases/usuario/listar-usuarios.use-case.interface';
 import { USUARIO_REPOSITORY, UsuarioRepositoryInterface } from '../../../domain/interfaces/repositories/usuario/usuario-repository.interface';
 import { Usuario } from '../../../domain/entities/usuario';
-
-// import { USUARIO_REPOSITORY, UsuarioRepositoryInterface } from '@domain/interfaces/repositories/usuario-repository.interface';
-// import { ListarUsuariosUseCaseInterface } from '@domain/interfaces/use-cases/listar-usuarios.use-case.interface';
-
-// import { Usuario } from '@entities/usuario';
 
 @Injectable({
     providedIn: 'root'

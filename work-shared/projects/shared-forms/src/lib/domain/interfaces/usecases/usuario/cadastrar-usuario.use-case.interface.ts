@@ -1,7 +1,6 @@
 import { InjectionToken } from "@angular/core";
-import { UsuarioFormulario } from "../../../entities/usuario";
 
-// import { UsuarioFormulario } from "@entities/usuario";
+import { UsuarioFormulario } from "../../../entities/usuario";
 
 export interface CadastrarUsuarioUseCaseInterface {
     cadastrar(usuario: UsuarioFormulario): Promise<UsuarioFormulario>;

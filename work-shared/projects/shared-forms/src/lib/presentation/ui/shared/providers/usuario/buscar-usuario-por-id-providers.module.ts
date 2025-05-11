@@ -9,13 +9,19 @@ import { BuscarUsuarioPorIdUseCase } from "../../../../../application/use-cases/
 
 import { USUARIO_REPOSITORY } from "../../../../../domain/interfaces/repositories/usuario/usuario-repository.interface";
 
-import { CrudUsuarioMockRepository } from "../../../../../data/repositories/usuario/crud-usuario-mock.repository";
+import { CrudUsuarioApiRestRepository } from "../../../../../data/repositories/usuario/crud-usuario-api-rest.repository";
+import { CommonModule } from "@angular/common";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
+    imports: [
+      CommonModule,
+      HttpClientModule,
+    ],
     providers: [
       { provide: BUSCAR_USUARIO_POR_ID_CONTROLLER, useClass: BuscarUsuarioPorIdControllerService },
       { provide: BUSCAR_USUARIO_POR_ID_USE_CASE, useClass: BuscarUsuarioPorIdUseCase },
-      { provide: USUARIO_REPOSITORY, useClass: CrudUsuarioMockRepository },
+      { provide: USUARIO_REPOSITORY, useClass: CrudUsuarioApiRestRepository },
     ],
   })
   export class BuscarUsuarioPorIdProvidersModule {}

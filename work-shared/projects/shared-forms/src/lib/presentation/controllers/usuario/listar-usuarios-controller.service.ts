@@ -4,11 +4,6 @@ import { LISTAR_USUARIOS_USE_CASE, ListarUsuariosUseCaseInterface } from '../../
 import { Usuario } from '../../../domain/entities/usuario';
 import { ListarUsuariosControllerInterface } from '../../../domain/interfaces/controllers/usuario/listar-usuario-controller.interface';
 
-// import { Usuario } from '@entities/usuario';
-
-// import { ListarUsuariosControllerInterface } from '@domain/interfaces/controllers/listar-usuario-controller.interface';
-// import { LISTAR_USUARIOS_USE_CASE, ListarUsuariosUseCaseInterface } from '@domain/interfaces/use-cases/listar-usuarios.use-case.interface';
-
 @Injectable({
   providedIn: 'root',
 })

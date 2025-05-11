@@ -3,9 +3,6 @@ import { Injectable } from '@angular/core';
 import { Usuario, UsuarioFormulario } from '../../../domain/entities/usuario';
 import { UsuarioRepositoryInterface } from '../../../domain/interfaces/repositories/usuario/usuario-repository.interface';
 
-// import { Usuario, UsuarioFormulario } from '@domain/entities/usuario';
-// import { UsuarioRepositoryInterface } from '@domain/interfaces/repositories/usuario-repository.interface';
-
 @Injectable({ providedIn: 'root' })
 export class CrudUsuarioMockRepository implements UsuarioRepositoryInterface {
 
@@ -24,8 +21,6 @@ export class CrudUsuarioMockRepository implements UsuarioRepositoryInterface {
     { id: 12, nome: 'Rafael Oliveira', email: 'rafael.oliveira@gmail.com', tipoUsuario: 'A', status: 'A' },
     { id: 13, nome: 'Beatriz Lima', email: 'beatriz.lima@gmail.com', tipoUsuario: 'A', status: 'A' },
     { id: 14, nome: 'Beatriz Lima', email: 'beatriz.lima@gmail.com', tipoUsuario: 'A', status: 'A' },
-    // { id: 15, nome: 'Beatriz Lima', email: 'beatriz.lima@gmail.com', tipoUsuario: 'A', status: 'A' },
-    // { id: 16, nome: 'Beatriz Lima', email: 'beatriz.lima@gmail.com', tipoUsuario: 'A', status: 'A' },
   ];
 
   private usuariosFormulario: UsuarioFormulario[] = [

@@ -5,13 +5,19 @@ import { AtualizarUsuarioControllerService } from "../../../../controllers/usuar
 import { ATUALIZAR_USUARIO_USE_CASE } from "../../../../../domain/interfaces/usecases/usuario/atualizar-usuario.use-case.interface";
 import { AtualizarUsuarioUseCase } from "../../../../../application/use-cases/usuario/atualizar-usuario.use-case";
 import { USUARIO_REPOSITORY } from "../../../../../domain/interfaces/repositories/usuario/usuario-repository.interface";
-import { CrudUsuarioMockRepository } from "../../../../../data/repositories/usuario/crud-usuario-mock.repository";
+import { CrudUsuarioApiRestRepository } from "../../../../../data/repositories/usuario/crud-usuario-api-rest.repository";
+import { CommonModule } from "@angular/common";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
+  imports: [
+    CommonModule,
+    HttpClientModule,
+  ],
   providers: [
     { provide: ATUALIZAR_USUARIO_CONTROLLER, useClass: AtualizarUsuarioControllerService },
     { provide: ATUALIZAR_USUARIO_USE_CASE, useClass: AtualizarUsuarioUseCase },
-    { provide: USUARIO_REPOSITORY, useClass: CrudUsuarioMockRepository },
+    { provide: USUARIO_REPOSITORY, useClass: CrudUsuarioApiRestRepository },
   ],
 })
 export class AtualizarUsuarioProvidersModule {}

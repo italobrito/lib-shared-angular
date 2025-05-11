@@ -1,8 +1,6 @@
 import { InjectionToken } from "@angular/core";
-import { Usuario, UsuarioFormulario } from "../../../entities/usuario";
-// import { Usuario, UsuarioFormulario } from "@entities/usuario";
 
-// import { Usuario, UsuarioFormulario } from "@entities/usuario";
+import { Usuario, UsuarioFormulario } from "../../../entities/usuario";
 
 export interface UsuarioRepositoryInterface {
     cadastrar(usuario: UsuarioFormulario): Promise<UsuarioFormulario>;

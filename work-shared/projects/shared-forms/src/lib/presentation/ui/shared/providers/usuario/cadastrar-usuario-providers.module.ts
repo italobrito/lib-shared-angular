@@ -6,13 +6,19 @@ import { CADASTRAR_USUARIO_CONTROLLER } from "../../../../../domain/interfaces/c
 import { CADASTRAR_USUARIO_USE_CASE } from "../../../../../domain/interfaces/usecases/usuario/cadastrar-usuario.use-case.interface";
 import { CadastrarUsuarioUseCase } from "../../../../../application/use-cases/usuario/cadastrar-usuario.use-case";
 import { USUARIO_REPOSITORY } from "../../../../../domain/interfaces/repositories/usuario/usuario-repository.interface";
-import { CrudUsuarioMockRepository } from "../../../../../data/repositories/usuario/crud-usuario-mock.repository";
+import { CrudUsuarioApiRestRepository } from "../../../../../data/repositories/usuario/crud-usuario-api-rest.repository";
+import { CommonModule } from "@angular/common";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
+    imports: [
+      CommonModule,
+      HttpClientModule,
+    ],
     providers: [
       { provide: CADASTRAR_USUARIO_CONTROLLER, useClass: CadastrarUsuarioControllerService },
       { provide: CADASTRAR_USUARIO_USE_CASE, useClass: CadastrarUsuarioUseCase },
-      { provide: USUARIO_REPOSITORY, useClass: CrudUsuarioMockRepository },
+      { provide: USUARIO_REPOSITORY, useClass: CrudUsuarioApiRestRepository },
     ],
   })
   export class CadastrarUsuarioProvidersModule {}

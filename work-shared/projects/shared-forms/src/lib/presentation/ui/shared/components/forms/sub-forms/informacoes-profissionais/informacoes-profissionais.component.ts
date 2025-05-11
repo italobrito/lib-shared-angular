@@ -10,7 +10,6 @@ import { DropdownType } from '../../../../../../../domain/entities/dropdown-type
 import { TIPOS_STATUS_USUARIO } from '../../../../constants/tipos-status-usuario';
 import { BtpDropdownComponent } from '../../../inputs/btn-dropdown/btp-dropdown.component';
 import { BtnInputComponent } from '../../../inputs/btn-input/btn-input.component';
-// import { BtnInputComponent, BtpDropdownComponent } from 'shared-forms';
 
 @Component({
   selector: 'app-informacoes-profissionais',
